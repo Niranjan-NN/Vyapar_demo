@@ -1,0 +1,130 @@
+/* Cart Container */
+.cart-container {
+  padding: 2rem;
+  max-width: 1000px; /* Match the max-width of other containers */
+  margin: 2rem auto; /* Added margin for spacing */
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cart-item:hover {
+  background: #e9ecef;
+  transform: scale(1.02);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 1;
+  text-align: left;
+}
+
+/* Cart Total */
+.cart-total {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.quantity-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+/* Remove Button */
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #218838;
+}
+
+/* Purchase More Button */
+.purchase-more-btn {
+  background: #ff9800; /* Match the brand color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+.purchase-more-btn:hover {
+  background: #e58e00; /* Darker shade for hover effect */
+}

@@ -1,0 +1,248 @@
+body {
+  height: auto;
+  font-family: Arial, sans-serif;
+  margin-top: 5%;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-image {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  float: right;
+  width: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-details h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.product-details p {
+  margin: 10px 0;
+}
+
+.product-details .price {
+  font-size: 20px;
+  color: #e47911;
+}
+
+.product-details .options {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-details .options .weight-select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-details .options .quantity-input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  width: 60px; /* Adjust width as needed */
+  text-align: center;
+}
+
+.product-details .options .add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-details .options .add-to-cart-btn:hover {
+  background-color: #e58e00;
+}
+
+.product-details .buttons {
+  margin: 20px 0;
+}
+
+.product-details .kg {
+  margin-right: 10px;
+}
+
+.product-details .buttons .buy-now-btn {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-details .buttons .buy-now-btn:hover {
+  background-color: #e58e00;
+}
+
+.additional-info, .reviews, .qna {
+  clear: both;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products {
+  clear: both;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.related-products .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related-products .products .product {
+  flex: 1 1 20%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.related-products .products .product img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products .products .product .details {
+  text-align: center;
+}
+
+.related-products .products .product .details h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.related-products .products .product .details .price {
+  font-size: 14px;
+  color: #e47911;
+}
+
+.add-to-cart-message {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  display: block; /* Ensure the message is displayed */
+}
+
+.review-input, .question-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e58e00;
+}
+
+.review-list, .question-list {
+  margin-top: 20px;
+}
+
+.review-item, .question-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  .product-image, .product-details {
+      float: none;
+      width: 100%;
+      padding: 10px;
+  }
+
+  .product-details h1 {
+      font-size: 20px;
+  }
+
+  .product-details .buttons button {
+      width: 100%;
+  }
+
+  .related-products .products .product {
+      flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-products .products .product {
+      flex: 1 1 100%;
+  }
+}
