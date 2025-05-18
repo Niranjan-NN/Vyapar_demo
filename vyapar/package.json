@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --host"  // Updated to bind to 0.0.0.0
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.74.4",
