@@ -16,7 +16,7 @@ const Product = () => {
   const [questions, setQuestions] = useState([]);
   const { addToCart } = useCart();
   const navigate = useNavigate();
-  const SERVER_URL = "http://localhost:3000"; // Backend URL
+  const SERVER_URL = "https://vyapar-demo.onrender.com"; // Backend URL
 
   useEffect(() => {
     const fetchProduct = async () => {
