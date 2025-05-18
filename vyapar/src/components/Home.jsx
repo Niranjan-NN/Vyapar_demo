@@ -8,7 +8,7 @@ const Home = () => {
   const [category, setCategory] = useState("fruits");
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
-  const SERVER_URL = "http://localhost:3000"; // Update to match your backend URL
+  const SERVER_URL = "https://vyapar-demo.onrender.com"; // Update to match your backend URL
 
   useEffect(() => {
     const fetchProducts = async () => {
